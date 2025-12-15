@@ -8,10 +8,10 @@ data:
     <!DOCTYPE html>
     <html>
     <head>
-    <title>{{.Values.env | default "dev" }}</title>
+    <title>{{ .Values.env | default "dev" }}</title>
     </head>
     <body>
-    <h1>{{.Values.env | default "dev" }}</h1>
+    <h1>{{ .Values.env | default "dev" }}</h1>
     </body>
     </html>
 {{- end }}

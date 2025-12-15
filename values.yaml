@@ -1,5 +1,5 @@
 extraObjects: []
 
-# env:
-# image:
-#   tag: ""
+env:
+image:
+  tag: ""
