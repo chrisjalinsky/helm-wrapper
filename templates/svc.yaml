@@ -1,4 +1,4 @@
-{{- if .Values.image.tag }}
+{{- if .Values.kargo.enabled }}
 apiVersion: v1
 kind: Service
 metadata:
@@ -11,5 +11,5 @@ spec:
   - protocol: TCP
     port: 3000
     targetPort: 80
-    nodePort: {{ .Values.nodePort | default 30080 }}
+    nodePort: {{ .Values.kargo.nodePort | default 30080 }}
 {{- end }}

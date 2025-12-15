@@ -1,4 +1,4 @@
-{{- if .Values.image.tag }}
+{{- if .Values.kargo.enabled }}
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: nginx 
-        image: public.ecr.aws/nginx/nginx:{{ .Values.image.tag }}
+        image: public.ecr.aws/nginx/nginx:{{ .Values.kargo.image.tag }}
         volumeMounts:
         - name: content
           mountPath: /usr/share/nginx/html

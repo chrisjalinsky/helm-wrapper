@@ -1,4 +1,4 @@
-{{- if .Values.image.tag }}
+{{- if .Values.kargo.enabled }}
 apiVersion: v1
 kind: ConfigMap
 metadata:

@@ -1,6 +1,8 @@
 extraObjects: []
 
-env:
-image:
-  tag: ""
-nodePort: 30080
+kargo:
+  enabled: false
+  env: "dev"
+  image:
+    tag: "1.29.4"
+  nodePort: 30080
