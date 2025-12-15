@@ -11,5 +11,5 @@ spec:
   - protocol: TCP
     port: 3000
     targetPort: 80
-    nodePort: {{ .Values.kargo.nodePort | default 30080 }}
+    nodePort: {{ include "helmWrapper.nodePort" . }}
 {{- end }}
