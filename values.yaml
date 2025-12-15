@@ -3,3 +3,4 @@ extraObjects: []
 env:
 image:
   tag: ""
+nodePort: 30080
